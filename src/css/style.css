@@ -1,0 +1,123 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    display: flex;
+    flex-flow: nowrap row;
+    height: fit-content;
+    position: relative;
+    border-radius: 4px;
+    background-color: #107abb;
+    padding-right: 10px;
+}
+
+.column {
+    border: 2px solid grey;
+    flex: 0 0 32.3%;
+    display: flex;
+    flex-flow: column;
+    background-color: #dee2e5;
+    color: #70838e;
+    border-radius: 10px;
+    height: fit-content;
+    margin: 1%;
+    padding: 10px;
+}
+
+.column:nth-child(even) {
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.column header {
+    color: #274454;
+    text-transform: uppercase;
+    padding: 2%;
+    font-weight: 600;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.tasks-wrapper {
+    min-height: 40px;
+}
+
+.add-button {
+    width: fit-content;
+    cursor: pointer;
+    border: none;
+    border-radius: 4px;
+    order: 3;
+    margin-top: 7px;
+    padding: 5px;
+    background-color: #dee2e5;;
+}
+
+.add-task-text {
+    display: block;
+    margin: 0 auto;
+    width: 98%;
+    border-radius: 5px;
+    border: none;
+    resize: none;
+}
+
+.add-card-button {
+    min-width: 30%;
+    padding: 2%;
+    border-radius: 5px;
+    font-weight: 700;
+    background-color: #5ca84d;
+    color: white;
+    border: none;
+    cursor: pointer;
+    margin-top: 15px;
+}
+
+.close-textfield {
+    height: 50%;
+    line-height: 140%;
+    cursor: pointer;
+}
+
+.task {
+    position: relative;
+    margin: 1%;
+    padding: 5px;
+    min-height: 3vmax;
+    color: #546b78;
+    background-color: white;
+    height: fit-content;
+    font-size: 100%;
+    border-radius: 5px;
+    box-sizing: border-box;
+    cursor: grab;
+}
+
+.dragged {
+    position: absolute;
+    z-index: 999;
+    width: 200px;
+    min-width: 240px;
+    overflow-wrap: break-word;
+    background-color: ivory;
+    opacity: 0.7;
+    pointer-events: none;
+    cursor: grabbing;
+}
+
+.invisible {
+    display: 'none';
+}
+
+.remove-task {
+    cursor: pointer;
+    position: absolute;
+    top: 0;
+    right: 1%;  
+    display: none;
+}
