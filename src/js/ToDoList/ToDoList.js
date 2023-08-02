@@ -150,7 +150,7 @@ export default class ToDoList {
   }
 
   showTextarea() {
-    this.textFieldWrap.style.display = "block";
+    this.textFieldWrap.style.display = "flex";
   }
 
   removeTextarea() {

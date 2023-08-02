@@ -60,10 +60,10 @@
 .add-task-text {
     display: block;
     margin: 0 auto;
-    width: 98%;
     border-radius: 5px;
     border: none;
     resize: none;
+    flex: 0 0 99%;
 }
 
 .add-card-button {
@@ -78,10 +78,18 @@
     margin-top: 15px;
 }
 
+.text-wrap {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 10px;
+}
+
 .close-textfield {
     height: 50%;
     line-height: 140%;
     cursor: pointer;
+    align-self: end;
+    margin-left: 10px;
 }
 
 .task {
