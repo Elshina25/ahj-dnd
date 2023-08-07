@@ -109,8 +109,6 @@
 .dragged {
     position: absolute;
     z-index: 999;
-    width: 200px;
-    min-width: 240px;
     overflow-wrap: break-word;
     background-color: ivory;
     opacity: 0.7;

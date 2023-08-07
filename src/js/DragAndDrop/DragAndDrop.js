@@ -27,7 +27,13 @@ export default class DragAndDrop {
     if (!e.target.classList.contains("task")) {
       return;
     }
+    const task = document.querySelector('.task');
+    const taskWidth = task.offsetWidth;
+    const taskHeight = task.offsetHeight;
+
     this.draggedElement = e.target;
+    this.draggedElement.style.width = taskWidth + 'px';
+    this.draggedElement.style.height = taskHeight + 'px';
     this.ghostElement = e.target.cloneNode(true);
     this.ghostElement.classList.add("dragged");
     document.body.appendChild(this.ghostElement);
